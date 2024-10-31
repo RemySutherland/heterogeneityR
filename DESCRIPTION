@@ -1,0 +1,20 @@
+Package: heterogeneityR
+Title: Measure Structural Heterogeneity of Rangeland Vegetation
+Version: 0.0.0.9000
+Authors@R: 
+    person("Remy", "Sutherland", , "remy.sutherland@okstate.edu", role = c("aut", "cre"))
+Description: Image analysis tools to measure an assortment of vegetation structure properties (visual obstruction, height, fuel characteristics) from ground-based digital imagery.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
+URL: https://github.com/RemySutherland/heterogeneityR
+BugReports: https://github.com/RemySutherland/heterogeneityR/issues
+Imports: 
+    dplyr,
+    jpeg,
+    randomForest,
+    stringr
