@@ -32,12 +32,14 @@ veg_ht <- function(input_path,board_height) {
 
     real.heights <- veg.heights/img_width*board_height
     max_height_tot <- max(real.heights)
+    min_height_tot <- min(real.heights)
     average_height <- mean(real.heights)
     sd_height <- sd(real.heights)
 
     write.stats<- data.frame(img.ID=              stringr::str_sub(names_veg_ht[i]),
                              avg.height.veg=          average_height,
                              max.height.veg=          max_height_tot,
+                             min.height.veg=          min_height_tot,
                              sd.height.veg=           sd_height
     )
 
