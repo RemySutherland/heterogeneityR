@@ -73,13 +73,13 @@ for (i in 1:length(paths_canopy_img)){
   write.stats<- data.frame(img.ID=              stringr::str_sub(names_canopy_img[i]),
                            sum.low.img=        length(low2),
                            sum.low.veg=     sum(low2 == 1),
-                           perc.low.veg=    sum(low2 ==1)/length(low2)*100,
+                           perc.low.veg=    sum(low2 ==1)/length(low2),
                            sum.mid.img=         length(mid2),
                            sum.mid.veg=     sum(mid2 == 1),
-                           perc.mid.veg=    sum(mid2 ==1)/length(mid2)*100,
+                           perc.mid.veg=    sum(mid2 ==1)/length(mid2),
                            sum.upper.img=         length(hi2),
                            sum.upper.veg=     sum(hi2 == 1),
-                           perc.upper.veg=    sum(hi2 ==1)/length(hi2)*100)
+                           perc.upper.veg=    sum(hi2 ==1)/length(hi2))
 
   canopy.stats<-rbind(canopy.stats, write.stats)
 

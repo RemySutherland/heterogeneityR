@@ -72,10 +72,10 @@ fuel_seg <- function(input_path,image_output = FALSE, output_path = NULL,veg_vo 
                            sum.img=        length(img.dat.02$thresh),
                            sum.lf=         sum(img.dat.02$thresh),
                            perc.veg=       perc.veg,
-                           perc.lf=        ((sum(img.dat.02$thresh)/length(img.dat.02$thresh))*100),
-                           perc.df=        perc.veg-((sum(img.dat.02$thresh)/length(img.dat.02$thresh))*100),
-                           perc.lf.veg=    ((sum(img.dat.02$thresh)/length(img.dat.02$thresh))*100)/perc.veg,
-                           perc.df.veg=    (perc.veg-((sum(img.dat.02$thresh)/length(img.dat.02$thresh))*100))/perc.veg)
+                           perc.lf=        ((sum(img.dat.02$thresh)/length(img.dat.02$thresh))),
+                           perc.df=        perc.veg-((sum(img.dat.02$thresh)/length(img.dat.02$thresh))),
+                           perc.lf.veg=    ((sum(img.dat.02$thresh)/length(img.dat.02$thresh)))/perc.veg,
+                           perc.df.veg=    (perc.veg-((sum(img.dat.02$thresh)/length(img.dat.02$thresh))))/perc.veg)
 
   fuel.stats<-rbind(fuel.stats, write.stats)
   }

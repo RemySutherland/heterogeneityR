@@ -66,15 +66,15 @@ for (i in 1:length(paths_var_img)){
   write.stats<- data.frame(img.ID=              stringr::str_sub(names_var_img[i]),
                            sum.left.img=        length(lef2),
                            sum.left.veg=     sum(lef2 == 1),
-                           perc.left.veg=    sum(lef2 ==1)/length(lef2)*100,
+                           perc.left.veg=    sum(lef2 ==1)/length(lef2),
                            sum.center.img=         length(mid2),
                            sum.center.veg=     sum(mid2 == 1),
-                           perc.center.veg=    sum(mid2 ==1)/length(mid2)*100,
+                           perc.center.veg=    sum(mid2 ==1)/length(mid2),
                            sum.right.img=         length(rig2),
                            sum.right.veg=     sum(rig2 == 1),
-                           perc.right.veg=    sum(rig2 ==1)/length(rig2)*100,
-                           horizontal.sd.veg=              sd(x = c(sum(lef2 ==1)/length(lef2)*100,sum(mid2 ==1)/length(mid2)*100,sum(rig2 ==1)/length(rig2)*100)),
-                           horizontal.var.veg=             (sd(x = c(sum(lef2 ==1)/length(lef2)*100,sum(mid2 ==1)/length(mid2)*100,sum(rig2 ==1)/length(rig2)*100)))^2
+                           perc.right.veg=    sum(rig2 ==1)/length(rig2),
+                           horizontal.sd.veg=              sd(x = c(sum(lef2 ==1)/length(lef2),sum(mid2 ==1)/length(mid2),sum(rig2 ==1)/length(rig2))),
+                           horizontal.var.veg=             (sd(x = c(sum(lef2 ==1)/length(lef2),sum(mid2 ==1)/length(mid2),sum(rig2 ==1)/length(rig2))))^2
   )
 
   veg.variance<-rbind(veg.variance, write.stats)

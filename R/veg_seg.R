@@ -45,10 +45,10 @@ veg_seg <- function(input_path,image_output = FALSE, output_path = NULL,training
     img.02<- matrix(img.dat.01$thresh, nrow=nrow(img.01), ncol=ncol(img.01))
     if(image_output == TRUE){jpeg::writeJPEG(img.02, paste(output_path, "/", names_veg[i], sep = ""), quality = 1)}
 
-    write.stats<- data.frame(img.ID=              stringr::str_sub(names_veg[i]),
-                             sum.img=        length(img.dat.01$thresh),
-                             sum.veg=        sum(img.dat.01$thresh),
-                             perc.veg=            (sum(img.dat.01$thresh)/length(img.dat.01$thresh))*100)
+    write.stats<- data.frame(img.ID=          stringr::str_sub(names_veg[i]),
+                             sum.img=         length(img.dat.01$thresh),
+                             sum.veg=         sum(img.dat.01$thresh),
+                             perc.veg=        sum(img.dat.01$thresh)/length(img.dat.01$thresh))
 
     veg.stats<-rbind(veg.stats, write.stats)
   }
