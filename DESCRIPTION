@@ -1,6 +1,6 @@
 Package: heterogeneityR
 Title: Measure Structural Heterogeneity of Rangeland Vegetation
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: c(
     person("Remy", "Sutherland", , "remy.sutherland@okstate.edu", role = c("aut", "cre")),
     person("Nathan", "Moore", , "nathan.m.moore@okstate.edu", role=c("ctb")))
