@@ -2,7 +2,7 @@ Package: heterogeneityR
 Title: Measure Structural Heterogeneity of Rangeland Vegetation
 Version: 0.0.0.9000
 Authors@R: 
-    person("Remy", "Sutherland", , "remy.sutherland@okstate.edu", role = c("aut", "cre"))
+    person("Remy", "Sutherland", , "remy.sutherland@okstate.edu", role = c("aut", "cre")),
     person("Nathan", "Moore", , "nathan.m.moore@okstate.edu", role=c("ctb"))
 Description: Image analysis tools to measure an assortment of vegetation structure properties (visual obstruction, height, fuel characteristics) from ground-based digital imagery.
 License: MIT + file LICENSE
