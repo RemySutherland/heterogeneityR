@@ -10,7 +10,7 @@
 #' sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/vo_img",sep ="", collapse="")
 #' sample_heights_df <- veg_ht(input_path = ,
 #'                             board_height = 116)
-veg_ht <- function(input_path,board_height) {
+veg_ht <- function(input_path,board_height,veg_type) {
 
   paths_veg_ht <- list.files(path=input_path,full.names=TRUE)
   names_veg_ht <- list.files(path=input_path,full.names=FALSE)
@@ -36,16 +36,18 @@ veg_ht <- function(input_path,board_height) {
     average_height <- mean(real.heights)
     sd_height <- sd(real.heights)
 
-    write.stats<- data.frame(img.ID=              stringr::str_sub(names_veg_ht[i]),
-                             avg.height.veg=          average_height,
-                             max.height.veg=          max_height_tot,
-                             min.height.veg=          min_height_tot,
-                             sd.height.veg=           sd_height
+    write.stats<- data.frame(img.ID=        stringr::str_sub(names_veg_ht[i]),
+                             avg =          average_height,
+                             max =          max_height_tot,
+                             min =          min_height_tot,
+                             sd =           sd_height
     )
 
-
-   veg_ht.stats<- rbind(veg_ht.stats, write.stats)
-
+  veg_ht.stats<- rbind(veg_ht.stats, write.stats)
   }
+  names(veg_ht.stats)[names(veg_ht.stats) == "avg"] <- paste("avg.height.", veg_type, sep = "")
+  names(veg_ht.stats)[names(veg_ht.stats) == "max"] <- paste("max.height.", veg_type, sep = "")
+  names(veg_ht.stats)[names(veg_ht.stats) == "min"] <- paste("min.height.", veg_type, sep = "")
+  names(veg_ht.stats)[names(veg_ht.stats) == "sd"] <- paste("sd.height.", veg_type, sep = "")
   return(veg_ht.stats)
 }
