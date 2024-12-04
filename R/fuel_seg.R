@@ -76,7 +76,7 @@ fuel_seg <- function(input_path,lf_output = FALSE, lf_path = NULL, df_output = F
 
 
 
-  if(is.null(veg_vo) == TRUE){perc.veg = (sum(img.dat.01$thresh)/length(img.dat.01$thresh))*100} else {perc.veg = veg_vo[i]}
+  if(is.null(veg_vo) == TRUE){perc.veg = (sum(img.dat.01$thresh)/length(img.dat.01$thresh))} else {perc.veg = veg_vo[i]}
 
   write.stats<- data.frame(img.ID=         stringr::str_sub(names_fuel[i]),
                            sum.img=        length(img.dat.02$lf_thresh),
