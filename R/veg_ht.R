@@ -2,6 +2,7 @@
 #'
 #' @param input_path File path for binary input images
 #' @param board_height Numeric value of actual height of profile board
+#' @param veg_type Character string to denote vegetation type
 #'
 #' @return A dataframe with mean, maximum, and standard deviation of vegetation height for input images
 #' @export

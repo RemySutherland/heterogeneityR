@@ -10,6 +10,8 @@ veg_ht(input_path, board_height, veg_type)
 \item{input_path}{File path for binary input images}
 
 \item{board_height}{Numeric value of actual height of profile board}
+
+\item{veg_type}{Character string to denote vegetation type}
 }
 \value{
 A dataframe with mean, maximum, and standard deviation of vegetation height for input images
