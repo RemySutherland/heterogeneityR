@@ -1,11 +1,14 @@
 #' Segment and calculate percent visual obstruction of live and dead fuel
 #'
 #' @param input_path File path for input images
-#' @param image_output Logical operator to enable visual output, Default = FALSE
-#' @param output_path File path for binary output images when image_output = TRUE, Default = NULL
-#' @param veg_vo List of values for associated vegetation visual obstruction values to calculate proportion live fuel
+#' @param lf_output Logical operator to enable live fuel visual output, Default = FALSE
+#' @param lf_path File path for binary output images for live fuel when lf_output = TRUE, Default = NULL
+#' @param df_output Logical operator to enable dead fuel visual output, Default = FALSE
+#' @param df_path File path for binary output images for dead fuel when df_output = TRUE, Default = NULL
+#' @param veg_vo Option to provide overall vegetation obstruction values (list) otherwise function will calculate, Default = NULL
 #' @param training Training data file for Random Forest Model
-#' @param thresh Numeric value of threshold value for Random Forest prediction
+#' @param veg_thresh Numeric value of threshold value for overall vegetation Random Forest prediction
+#' @param fuel_thresh Numeric value of threshold value for fuel type Random Forest prediction
 #' @param ntree Number of trees to grow for Random Forest Model
 #' @param mtry Number of variables to randomly sample as candidates at each split
 #'
