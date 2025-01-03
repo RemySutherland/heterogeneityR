@@ -6,11 +6,14 @@
 \usage{
 fuel_seg(
   input_path,
-  image_output = FALSE,
-  output_path = NULL,
+  lf_output = FALSE,
+  lf_path = NULL,
+  df_output = FALSE,
+  df_path = NULL,
   veg_vo = NULL,
   training,
-  thresh,
+  veg_thresh,
+  fuel_thresh,
   ntree,
   mtry
 )
@@ -18,15 +21,21 @@ fuel_seg(
 \arguments{
 \item{input_path}{File path for input images}
 
-\item{image_output}{Logical operator to enable visual output, Default = FALSE}
+\item{lf_output}{Logical operator to enable live fuel visual output, Default = FALSE}
 
-\item{output_path}{File path for binary output images when image_output = TRUE, Default = NULL}
+\item{lf_path}{File path for binary output images for live fuel when lf_output = TRUE, Default = NULL}
 
-\item{veg_vo}{List of values for associated vegetation visual obstruction values to calculate proportion live fuel}
+\item{df_output}{Logical operator to enable dead fuel visual output, Default = FALSE}
+
+\item{df_path}{File path for binary output images for dead fuel when df_output = TRUE, Default = NULL}
+
+\item{veg_vo}{Option to provide overall vegetation obstruction values (list) otherwise function will calculate, Default = NULL}
 
 \item{training}{Training data file for Random Forest Model}
 
-\item{thresh}{Numeric value of threshold value for Random Forest prediction}
+\item{veg_thresh}{Numeric value of threshold value for overall vegetation Random Forest prediction}
+
+\item{fuel_thresh}{Numeric value of threshold value for fuel type Random Forest prediction}
 
 \item{ntree}{Number of trees to grow for Random Forest Model}
 

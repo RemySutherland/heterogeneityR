@@ -4,7 +4,7 @@
 \alias{veg_ht}
 \title{Calculate vegetation height from segmented images}
 \usage{
-veg_ht(input_path, board_height)
+veg_ht(input_path, board_height, veg_type)
 }
 \arguments{
 \item{input_path}{File path for binary input images}
