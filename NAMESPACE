@@ -2,6 +2,7 @@
 
 export(canopy_seg)
 export(fuel_seg)
+export(rfm_test)
 export(veg_ht)
 export(veg_seg)
 export(veg_var)
