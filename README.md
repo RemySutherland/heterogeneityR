@@ -7,7 +7,7 @@ You can install the latest version of ```heterogeneityR``` using ```remotes``` <
 ```remotes::install_github("RemySutherland/heterogeneityR")``` </br>
 </br>
 <b> Publication </b></br>
-Our manuscript introducing the ```heterogeneityR``` package is now published in <i>Rangeland Ecology and Management</i> and can be accessed here: https://www.sciencedirect.com/science/article/pii/S1550742425000818</br>
+Our manuscript introducing the ```heterogeneityR``` package is now published in <i>Rangeland Ecology and Management</i> and can be accessed here: https://www.sciencedirect.com/science/article/pii/S1550742425000739</br>
 </br>
 <b> Contact </b> </br>
 For questions, comments, or feedback please email: remy.sutherland@okstate.edu
