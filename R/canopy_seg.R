@@ -15,9 +15,7 @@
 #' @return A dataframe with estimated vegetation visual obstruction for specified canopy sections and binary images if selected
 #' @export
 #'
-#' @examples
-#' sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/vo_img",sep ="", collapse="")
-#' sample_canopy_df <- canopy_seg(input_path = sample_imgs)
+
 canopy_seg <- function(input_path,image_output = FALSE,
                        low_top=0.22,low_bot=0.00,mid_top=0.43,mid_bot=0.22,upper_top=1,upper_bot=0.43,
                        low_output=NULL,mid_output=NULL,upper_output=NULL) {

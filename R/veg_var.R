@@ -9,9 +9,7 @@
 #' @return A dataframe with estimated vegetation visual obstruction for specified horizontal sections, variance, and standard deviation and binary images if selected
 #' @export
 #'
-#' @examples
-#' sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/vo_img",sep ="", collapse="")
-#' sample_variance_df <- veg_var(sample_imgs)
+
 veg_var <- function(input_path,image_output = FALSE,
                     left_output=NULL,center_output=NULL,right_output=NULL) {
 

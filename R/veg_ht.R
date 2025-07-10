@@ -7,10 +7,7 @@
 #' @return A dataframe with mean, maximum, and standard deviation of vegetation height for input images
 #' @export
 #'
-#' @examples
-#' sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/vo_img",sep ="", collapse="")
-#' sample_heights_df <- veg_ht(input_path = ,
-#'                             board_height = 116)
+
 veg_ht <- function(input_path,board_height,veg_type) {
 
   paths_veg_ht <- list.files(path=input_path,full.names=TRUE)

@@ -11,15 +11,7 @@
 #' @return A dataframe with estimated vegetation visual obstruction and binary images if selected
 #' @export
 #'
-#' @examples
-#' sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/img",sep ="", collapse="")
-#' training_file <- system.file("stillwater.training.rda")
-#' sample_veg_vo_df <- veg_seg(input_path = sample_imgs,
-#'                             image_output = FALSE,
-#'                             training = training_file,
-#'                             thresh = 0.95,
-#'                             ntree = 100,
-#'                             mtry = 1)
+
 veg_seg <- function(input_path,image_output = FALSE, output_path = NULL,training,thresh,ntree,mtry) {
 
   if(image_output != TRUE & image_output != FALSE) warning("value of image_output must be TRUE or FALSE")

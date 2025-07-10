@@ -12,18 +12,10 @@
 #' @param ntree Number of trees to grow for Random Forest Model
 #' @param mtry Number of variables to randomly sample as candidates at each split
 #'
-#' @return a data frame with estimated live fuel visual obstruction (percentage of overall vegetation) and binary images if selected
+#' @return a data frame with estimated live and dead fuel visual obstruction (percentage of overall vegetation) and binary images if selected
 #' @export
 #'
-#' @examples
-#' sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/img",sep ="", collapse="")
-#' training_file <- system.file("stillwater.training.rda")
-#' sample_lf_vo_df <- lf_seg(input_path = sample_imgs,
-#'                             image_output = FALSE,
-#'                             training = training_file,
-#'                             thresh = 0.80,
-#'                             ntree = 100,
-#'                             mtry = 1)
+
 fuel_seg <- function(input_path,lf_output = FALSE, lf_path = NULL, df_output = FALSE,
                      df_path = NULL, veg_vo = NULL,training,veg_thresh,fuel_thresh,ntree,mtry) {
 
