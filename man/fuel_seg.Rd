@@ -42,18 +42,8 @@ fuel_seg(
 \item{mtry}{Number of variables to randomly sample as candidates at each split}
 }
 \value{
-a data frame with estimated live fuel visual obstruction (percentage of overall vegetation) and binary images if selected
+a data frame with estimated live and dead fuel visual obstruction (percentage of overall vegetation) and binary images if selected
 }
 \description{
 Segment and calculate percent visual obstruction of live and dead fuel
-}
-\examples{
-sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/img",sep ="", collapse="")
-training_file <- system.file("stillwater.training.rda")
-sample_lf_vo_df <- lf_seg(input_path = sample_imgs,
-                            image_output = FALSE,
-                            training = training_file,
-                            thresh = 0.80,
-                            ntree = 100,
-                            mtry = 1)
 }

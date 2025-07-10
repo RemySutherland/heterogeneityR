@@ -29,7 +29,3 @@ A dataframe with estimated vegetation visual obstruction for specified horizonta
 \description{
 Calculate horizontal variance of vegetation visual obstruction within profile board images
 }
-\examples{
-sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/vo_img",sep ="", collapse="")
-sample_variance_df <- veg_var(sample_imgs)
-}

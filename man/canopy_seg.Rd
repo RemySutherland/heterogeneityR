@@ -47,7 +47,3 @@ A dataframe with estimated vegetation visual obstruction for specified canopy se
 \description{
 Calculate visual obstruction of specific vertical canopy sections
 }
-\examples{
-sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/vo_img",sep ="", collapse="")
-sample_canopy_df <- canopy_seg(input_path = sample_imgs)
-}

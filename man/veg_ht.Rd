@@ -19,8 +19,3 @@ A dataframe with mean, maximum, and standard deviation of vegetation height for 
 \description{
 Calculate vegetation height from segmented images
 }
-\examples{
-sample_imgs <- paste(find.package(package="heterogeneityR"),"/inst/vo_img",sep ="", collapse="")
-sample_heights_df <- veg_ht(input_path = ,
-                            board_height = 116)
-}
